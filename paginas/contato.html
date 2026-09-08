@@ -7,19 +7,48 @@
 
     <body>
         <header>
-            <h1>Fale Conosco</h1>
+            <h1>ItaPets - Produtos Pet</h1>
             <nav>
                 <a href="../index.html">Início</a> |
-                <a href="../index.html#produtos">Produtos</a> 
+                <a href="../index.html#produtos">Produtos</a>
             </nav>
         </header>
 
         <main>
-            
+            <section id="contato">
+                <h2>Fale Conosco</h2>
+                <p>Envie suas dúvidas, sugestões ou comentários sobre nosso site.</p>
 
+                <form action="mailto:hiakewvealves@gmail.com?subject=Comentário%20sobre%20o%20site%20ItaPets" method="post" enctype="text/plain">
+                    <p>
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" id="nome" name="Nome" required placeholder="Digite seu nome">
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="E-mail" required placeholder="seuemail@exemplo.com">
+                    </p>
+
+                    <p>
+                        <label for="telefone">Telefone:</label><br>
+                        <input type="tel" id="telefone" name="Telefone" required placeholder="(79) 99999-9999">
+                    </p>
+
+                    <p>
+                        <label for="comentario">Comentário:</label><br>
+                        <textarea id="comentario" name="Comentario" rows="5" cols="40" required placeholder="Escreva aqui seu comentário..."></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar Comentário</button>
+                    </p>
+                </form>
+            </section>
         </main>
 
+        <footer>
+            <p>&copy; 2026 ItaPets - Todos os Direitos Reservados.</p>
+        </footer>
     </body>
-    
-
 </html>
