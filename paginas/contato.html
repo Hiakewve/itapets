@@ -8,7 +8,7 @@
 
     <body>
         <header>
-            <h1>ItaPets - Produtos Pet</h1>
+            <h1>ItaPets - Seu Mundo Pet</h1>
             <nav>
                 <a href="../index.html">Início</a> |
                 <a href="../index.html#produtos">Produtos</a>
@@ -18,61 +18,69 @@
         <main>
             <section id="contato">
                 <h2>Fale Conosco</h2>
-                Envie suas dúvidas, sugestões ou comentários sobre nosso site.
                 
-
                 <form action="mailto:seuemail@exemplo.com?subject=Comentário%20sobre%20o%20site%20ItaPets" method="post" enctype="text/plain">
-                    <label for="nome">Nome Completo:</label><br>
-                    <input type="text" id="nome" name="Nome" required placeholder="Digite seu nome">
-                    
 
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" id="email" name="E-mail" required placeholder="seuemail@exemplo.com">
-                    
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="Nome" required placeholder="Digite seu nome">
 
-                    <label for="telefone">Telefone:</label><br>
-                    <input type="tel" id="telefone" name="Telefone" required placeholder="(79) 99999-9999">
-                    
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="E-mail" required placeholder="seuemail@exemplo.com">
 
-                    <label>Qual pet você possui?</label><br>
-                    <input type="radio" id="pet-cao" name="TipoDePet" value="Cão">
-                    <label for="pet-cao">Cão</label><br>
-                    <input type="radio" id="pet-gato" name="TipoDePet" value="Gato">
-                    <label for="pet-gato">Gato</label><br>
-                    <input type="radio" id="pet-outros" name="TipoDePet" value="Outros">
-                    <label for="pet-outros">Outros</label>
-                    
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="Telefone" required placeholder="(79) 99999-9999">
+                    </fieldset>
 
-                    <label for="assunto">Assunto da Mensagem:</label><br>
-                    <select id="assunto" name="Assunto">
-                        <option value="Dúvida">Dúvida sobre produto</option>
-                        <option value="Sugestão">Sugestão</option>
-                        <option value="Elogio">Elogio</option>
-                        <option value="Reclamação">Reclamação</option>
-                    </select>
-                    
+                    <fieldset>
+                        <legend>Qual pet você possui?</legend>
+                        
+                        <input type="radio" id="pet-cao" name="TipoDePet" value="Cão">
+                        <label for="pet-cao">Cão</label>
 
-                    <label for="comentario">Comentário:</label><br>
-                    <textarea id="comentario" name="Comentario" rows="5" cols="40" required placeholder="Escreva aqui seu comentário..."></textarea>
-                    
+                        <input type="radio" id="pet-gato" name="TipoDePet" value="Gato">
+                        <label for="pet-gato">Gato</label>
 
-                    <label>Interesses e Inscrições:</label><br>
-                    <input type="checkbox" id="newsletter" name="Newsletter" value="Sim" checked>
-                    <label for="newsletter">Desejo receber promoções por e-mail</label><br>
-                    
-                    <input type="checkbox" id="termos" name="Termos" value="Aceito" required>
-                    <label for="termos">Concordo com os termos de uso e privacidade</label>
-                    
+                        <input type="radio" id="pet-outros" name="TipoDePet" value="Outros">
+                        <label for="pet-outros">Outros</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Sua Mensagem</legend>
+
+                        <label for="assunto">Assunto da Mensagem:</label>
+                        <select id="assunto" name="Assunto">
+                            <option value="Dúvida">Dúvida sobre produto</option>
+                            <option value="Sugestão">Sugestão</option>
+                            <option value="Elogio">Elogio</option>
+                            <option value="Reclamação">Reclamação</option>
+                        </select>
+
+                        <label for="comentario">Comentário:</label>
+                        <textarea id="comentario" name="Comentario" rows="5" cols="40" required placeholder="Escreva aqui seu comentário..."></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Termos e Preferências</legend>
+
+                        <input type="checkbox" id="newsletter" name="Newsletter" value="Sim" checked>
+                        <label for="newsletter">Desejo receber promoções por e-mail</label>
+
+                        <input type="checkbox" id="termos" name="Termos" value="Aceito" required>
+                        <label for="termos">Concordo com os termos de uso e privacidade</label>
+                    </fieldset>
 
                     <button type="submit">Enviar Comentário</button>
                     <button type="reset">Limpar Campos</button>
+
                 </form>
             </section>
         </main>
 
-
         <footer>
-            &copy; 2026 ItaPets - Todos os Direitos Reservados.
+            <p>&copy; 2026 ItaPets - Todos os Direitos Reservados.</p>
         </footer>
     </body>
 </html>
