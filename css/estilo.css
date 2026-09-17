@@ -55,9 +55,6 @@ a:hover h3 {
     color: #2f855a;
 }
 
-
-
-
 /* ==========================================================================
    2. ESTILOS UTILITÁRIOS (Classes Reutilizáveis)
    ========================================================================== */
@@ -67,4 +64,25 @@ a:hover h3 {
 /* ==========================================================================
    3. ESTILOS ESPECÍFICOS (Header, Footer, Cards, Formulário, etc.)
    ========================================================================== */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0em 0em;
+    background-color: #ffffff;
+    border-bottom: 3px solid #edf2f7;
+}
 
+nav {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+nav a {
+    font-weight: 600;
+    padding: 0.5em 0.75em;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}

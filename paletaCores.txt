@@ -1,0 +1,17 @@
+1. Petz Blue (Azul Confiança): #2b6cb0 Cor Primária: Identidade da marca. Utilizada na cor dos títulos (h1, h2, h3), 
+links no estado normal (a), bordas de destaque e nos botões de ação principal.
+
+2. Vitality Green (Verde Saúde): #2f855a Cor Secundária e Interatividade: Remete a cuidado e bem-estar. Utilizada 
+exclusivamente para o estado interativo de passar o mouse (:hover) em links e botões, além de badges/preços especiais.
+
+3. Grafite / Chumbo: #2d3748 Texto Principal: Substitui o preto absoluto (#000000). Utilizada no corpo do texto 
+(body, p, rótulos de campos <label>), oferecendo alto contraste para leitura sem cansar a visão do usuário.
+
+4. Off-White Suave: #f7fafc Fundo da Página (body): Substitui o branco brilhante da tela. Garante um visual moderno 
+e uma experiência visual muito mais aconchegante.
+
+5. Branco Puro: #ffffff Fundo de Containers e Cards: Utilizada para destacar o fundo do <header>, do <footer> e do 
+interior dos cartões de produto (<article.card-produto>) sobre o fundo off-white da página.
+
+6. Cinza Linha / Borda: #edf2f7 Divisores e Estrutura: Utilizada em bordas suaves (border), linhas divisórias de seções 
+e fundos de campos de formulário para dar acabamento limpo.
