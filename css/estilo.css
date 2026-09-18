@@ -27,7 +27,8 @@ h2 {
 
 h3 {
     font-size: 1.17em;
-    color:#2b6cb0;
+    color:#2d3748;
+    font-weight: bold;
 }
 
 p {
@@ -42,7 +43,7 @@ img, picture {
 }
 
 a {
-    color: #2b6cb0;
+    color: #2d3748;
     text-decoration: none;
 }
 
@@ -85,4 +86,43 @@ nav a {
     padding: 0.5em 0.75em;
     border-radius: 4px;
     transition: background-color 0.2s, color 0.2s;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+#produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5em;
+    padding: 2em;
+}
+
+.card-produto {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-produto a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-produto p:last-child {
+    margin-top: auto;
+    font-size: 1.50em;
+    color: #2b6cb0;
+    font-weight: bold;
+}
+
+.card-produto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
