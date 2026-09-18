@@ -201,3 +201,15 @@ dd {
     margin-left: 0; 
     color: #2d3748;
 }
+
+footer {
+    background-color: #2b6cb0;
+    text-align: center;
+    padding: 1.5em 1em;
+    margin-top: 3em;
+}
+
+footer p {
+    color: #f7fafc;
+    margin-bottom: 0;
+}
