@@ -1,52 +1,55 @@
 /* ==========================================================================
    1. ESTILOS GERAIS E BASE (HTML Tags, Reset, Tipografia e Body)
    ========================================================================== */
+
+/* Seletor universal: seleciona absolutamente todos os elementos da página */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove as margens externas padrão aplicadas pelos navegadores */
+    padding: 0; /* Remove o espaçamento interno padrão aplicado pelos navegadores */
+    box-sizing: border-box; /* Faz com que a largura e altura incluam o padding e a borda, evitando que o elemento aumente de tamanho */
 }
 
-body {
-    font-size: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #2d3748;
-    background-color: #f7fafc;
-    line-height: 1.50;
+body { 
+    font-size: 100%; /* Define o tamanho base da fonte para 100% (respeitando a configuração de 16px padrão do navegador) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a família tipográfica com opções de recurso caso a primeira fonte não esteja disponível */
+    color: #2d3748; /* Define a cor principal do texto */
+    background-color: #f7fafc; /* Define a cor de fundo de toda a página */
+    line-height: 1.50; /* Define a altura da linha de texto */
 }
 
 h1 {
-    font-size: 2.00em;
-    color:#2b6cb0;
+    font-size: 2.00em; /* Tamanho da fonte proporcional */
+    color: #2b6cb0; 
 }
 
 h2 {
     font-size: 1.50em;
-    color:#2b6cb0;
+    color: #2b6cb0;
 }
 
 h3 {
     font-size: 1.17em;
-    color:#2d3748;
-    font-weight: bold;
+    color: #2d3748;
+    font-weight: bold; /* Aplica o estilo de texto em negrito */
 }
 
 p {
     font-size: 1.00em;
-    color:#2d3748;
+    color: #2d3748;
 }
 
 img, picture {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    max-width: 100%; /* Garante que a imagem nunca ultrapasse a largura do container onde está inserida */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção original da imagem */
+    display: block; /* Transforma o elemento em bloco, eliminando pequenos espaços em branco indesejados na base */
 }
 
 a {
     color: #2d3748;
-    text-decoration: none;
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
 }
 
+/* Estado de interatividade quando o utilizador passa o cursor sobre o link */
 a:hover {
     color: #2f855a;
 }
@@ -65,38 +68,52 @@ a:hover h3 {
 /* ==========================================================================
    3. ESTILOS ESPECÍFICOS (Header, Footer, Cards, Formulário, etc.)
    ========================================================================== */
+/* Estilização do cabeçalho da página */
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0em 0em;
+    display: flex; /* Ativa o modelo de layout Flexbox */
+    justify-content: space-around; /* Distribui os elementos com espaço proporcional ao redor deles */
+    align-items: center; /* Alinha os elementos verticalmente ao centro */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a linha seguinte se não houver espaço suficiente */
+    padding: 0em 0em; /* Espaçamento interno superior/inferior e esquerdo/direito nulos */
     background-color: #ffffff;
-    border-bottom: 3px solid #edf2f7;
+    border-bottom: 3px solid #edf2f7; /* Adiciona uma linha de borda inferior contínua */
 }
 
 nav {
     display: flex;
-    gap: 1.5em;
+    gap: 1.5em; /* Cria um espaçamento automático entre os itens flexíveis */
     align-items: center;
 }
 
 nav a {
-    font-weight: 600;
+    font-weight: bolder;
     padding: 0.5em 0.75em;
     border-radius: 4px;
-    transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.2s, color 0.2s; /* Suaviza a transição de cores do fundo e do texto ao passar o cursor */
+}
+
+#inicio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    padding: 3em 1em;
+    background-color: #ffffff;
+    border: 1px solid #edf2f7;
+    border-radius: 12px;
+    margin-bottom: 2.5em;
+    flex-wrap: wrap;
 }
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; /* Limita a largura máxima do conteúdo em ecrãs grandes */
+    margin: 0 auto; /* Centraliza o container horizontalmente na página */
     padding: 0 1em;
 }
 
 #produtos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Cria colunas responsivas automáticas  */
     gap: 1.5em;
     padding: 2em;
 }
@@ -105,23 +122,24 @@ main {
     background-color: #ffffff;
     border-radius: 12px;
     padding: 1em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Aplica uma sombra suave e sutil sob o cartão */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Define transição suave para os efeitos de movimento e sombra */
 }
 
 .card-produto:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px); /* Eleva ligeiramente o cartão para cima (4px) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Intensifica a sombra para dar sensação de profundidade/elevação */
 }
 
 .card-produto a {
     display: flex;
-    flex-direction: column;
-    height: 100%;
+    flex-direction: column; /* Orientação vertical dos elementos internos */
+    height: 100%; /* Faz o link ocupar 100% da altura total do cartão */
 }
 
+/* Seleciona o último parágrafo dentro do cartão de produto (o preço) */
 .card-produto p:last-child {
-    margin-top: auto;
+    margin-top: auto; /* Empurra o preço automaticamente para a base do cartão */
     font-size: 1.50em;
     color: #2b6cb0;
     font-weight: bold;
@@ -157,7 +175,7 @@ button {
     color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
+    cursor: pointer; /* Altera o cursor para o ícone de mãozinha indicando que é clicável */
 }
 
 button:hover {
@@ -165,6 +183,7 @@ button:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilização unificada dos campos de entrada de texto, seleção e caixa de texto */
 input[type="text"],
 input[type="email"],
 select,
@@ -176,17 +195,18 @@ textarea {
     font-size: 1em;
 }
 
+/* Estado de foco quando o utilizador clica para digitar no campo */
 input:focus,
 select:focus,
 textarea:focus {
     border-color: #2b6cb0;
-    outline: none; 
+    outline: none; /* Remove a linha de contorno preta padrão do navegador */
 }
 
 dl {
     display: grid;
-    grid-template-columns: 150px 1fr; 
-    gap: 0.75em 1em;
+    grid-template-columns: 150px 1fr;  /* Define duas colunas: uma fixa de 150px para os termos e outra flexível (1fr) para os valores */
+    gap: 0.75em 1em; /* Espaçamento entre linhas (0.75em) e colunas (1em) */
     padding: 1.5em;
     background-color: #ffffff;
     border-radius: 8px;
@@ -198,15 +218,15 @@ dt {
 }
 
 dd {
-    margin-left: 0; 
+    margin-left: 0;  /* Remove a margem esquerda padrão inserida pelos navegadores */
     color: #2d3748;
 }
 
 footer {
     background-color: #2b6cb0;
-    text-align: center;
+    text-align: center; /* Centraliza o texto do rodapé */
     padding: 1.5em 1em;
-    margin-top: 3em;
+    margin-top: 3em; /* Afasta o rodapé do conteúdo acima */
 }
 
 footer p {
