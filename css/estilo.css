@@ -3,6 +3,8 @@
    ========================================================================== */
 
 /* Seletor universal: seleciona absolutamente todos os elementos da página */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
 * {
     margin: 0; /* Remove as margens externas padrão aplicadas pelos navegadores */
     padding: 0; /* Remove o espaçamento interno padrão aplicado pelos navegadores */
@@ -11,7 +13,7 @@
 
 body { 
     font-size: 100%; /* Define o tamanho base da fonte para 100% (respeitando a configuração de 16px padrão do navegador) */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a família tipográfica com opções de recurso caso a primeira fonte não esteja disponível */
+    font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a família tipográfica com opções de recurso caso a primeira fonte não esteja disponível */
     color: #2d3748; /* Define a cor principal do texto */
     background-color: #f7fafc; /* Define a cor de fundo de toda a página */
     line-height: 1.50; /* Define a altura da linha de texto */
@@ -25,6 +27,7 @@ h1 {
 h2 {
     font-size: 1.50em;
     color: #2b6cb0;
+    font-weight: 700;
 }
 
 h3 {
@@ -92,17 +95,87 @@ nav a {
     transition: background-color 0.2s, color 0.2s; /* Suaviza a transição de cores do fundo e do texto ao passar o cursor */
 }
 
+/* Container Principal do Banner (Hero Section) */
 #inicio {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 2em;
-    padding: 3em 1em;
-    background-color: #ffffff;
+    padding: 4em 3em;
+    background-color: #2b6cb0;
     border: 1px solid #edf2f7;
-    border-radius: 12px;
+    border-radius: 24px;
     margin-bottom: 2.5em;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite empilhar em telas pequenas */
+}
+
+/* Bloco do Conteúdo de Texto */
+.banner-conteudo {
+    flex: 1;
+    min-width: 280px; /* Garante boa largura em telas móveis */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.banner-conteudo h2 {
+    color: #ffffff;
+    font-family: 'Nunito', 'Segoe UI', sans-serif;
+    font-weight: 800;
+    font-size: 2.75em;
+    line-height: 1.2;
+}
+
+.banner-conteudo p {
+    color: #edf2f7;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Container do Botão de Ação */
+.banner-botoes {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 8px;
+}
+
+/* Estilo do Botão (Aplica no link <a> dentro de .banner-botoes) */
+.banner-botoes a,
+.btn-banner {
+    display: inline-block;
+    background-color: #2f855a;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.85em 2em;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.banner-botoes a:hover,
+.btn-banner:hover {
+    background-color: #276749;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Bloco da Imagem do Banner */
+.banner-imagem {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-imagem img {
+    border-radius: 24px;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
 }
 
 main {
