@@ -221,8 +221,52 @@ nav a:hover {
     transform: scale(1.01);
 }
 
+/* Seção de Categorias/Especialidades Centralizada */
 #categoria {
+    text-align: center;
+    padding: 3em 1em 2em 1em;
+    margin-bottom: 1.5em;
+}
+
+#categoria h2 {
+    font-size: 2.2em;
+    color: #2b6cb0;
+    font-weight: 800;
+    margin-bottom: 0.3em;
+}
+
+#categoria p {
+    color: #718096;
+    font-size: 1.05em;
+    margin-bottom: 2em;
+}
+
+/* Container de Links/Botões de Categoria */
+nav.categoria {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
     align-items: center;
+    gap: 1.5em; /* Espaçamento uniforme entre as opções */
+    flex-wrap: wrap; /* Garante que os botões quebrem linha no celular */
+}
+
+/* Estilização dos Links de Categoria */
+.btn-categoria {
+    display: inline-block;
+    color: #2d3748;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all 0.25s ease;
+}
+
+/* Efeito ao passar o cursor pelos botões */
+.btn-categoria:hover {
+    color: #2b6cb0;
+    background-color: #ebf8ff;
+    transform: translateY(-2px);
 }
 
 main {
