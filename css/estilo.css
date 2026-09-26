@@ -2,7 +2,7 @@
    1. ESTILOS GERAIS E BASE (HTML Tags, Reset, Tipografia e Body)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Nunito:wght@400;600;700&display=swap');
 
 * {
     margin: 0; /* Remove as margens externas padrão aplicadas pelos navegadores */
@@ -121,45 +121,47 @@ nav a:hover {
     transform: translateY(-1px);
 }
 
-/* Container Principal do Banner (Hero Section) */
+/* Container Principal do Banner (Hero Section Clean/Luxo) */
 #inicio {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2.5em;
-    padding: 4em 3.5em;
-    background: linear-gradient(135deg, #2b6cb0 0%, #1a365d 100%);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 28px;
-    margin-top: 1.5em;
+    gap: 4em;
+    padding: 4em 2em;
+    background-color: #f9f8f6; /* Fundo off-white claro e elegante */
+    border: none;
+    border-radius: 0;
+    margin-top: 1em;
     margin-bottom: 3em;
-    flex-wrap: wrap; /* Permite empilhar em telas pequenas */
-    box-shadow: 0 20px 25px -5px rgba(43, 108, 176, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    flex-wrap: wrap;
+    box-shadow: none; /* Remove sombras do container principal */
 }
 
 /* Bloco do Conteúdo de Texto */
 .banner-conteudo {
     flex: 1;
-    min-width: 300px; /* Garante boa largura em telas móveis */
+    min-width: 320px;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 20px;
 }
 
 .banner-conteudo h2 {
-    color: #ffffff;
-    font-family: 'Nunito', 'Segoe UI', sans-serif;
-    font-weight: 900;
-    font-size: 2.85em;
-    line-height: 1.15;
-    letter-spacing: -1px;
+    color: #2b6cb0; /* Grafite escuro levemente esverdeado */
+    font-family: 'Playfair Display', Georgia, serif; /* Fonte serifada para o estilo luxo */
+    font-weight: 700;
+    font-size: 3.2em;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
 }
 
 .banner-conteudo p {
-    color: #e2e8f0;
+    color: #718096;
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
-    font-size: 1.15em;
+    font-size: 1.05em;
     line-height: 1.6;
+    max-width: 480px;
 }
 
 /* Container do Botão de Ação */
@@ -170,29 +172,32 @@ nav a:hover {
     margin-top: 10px;
 }
 
-/* Estilo do Botão (Aplica no link <a> dentro de .banner-botoes) */
+/* Estilo do Botão Escuro Minimalista */
 .banner-botoes a,
 .btn-banner {
     display: inline-block;
-    background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
+    background-color: #2b6cb0; /* botão azul */
     color: #ffffff;
-    font-weight: 800;
-    font-size: 1.05em;
-    padding: 0.9em 2.2em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 0.85em;
+    text-transform: uppercase; /* Texto em caixa alta */
+    letter-spacing: 1.5px; /* Espaçamento refinado entre letras */
+    padding: 1.1em 2.5em;
     border-radius: 50px;
-    box-shadow: 0 10px 15px -3px rgba(47, 133, 90, 0.4);
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: none;
+    transition: all 0.3s ease;
 }
 
 .banner-botoes a:hover,
 .btn-banner:hover {
-    background: linear-gradient(135deg, #2f855a 0%, #276749 100%);
+    background-color: #000000;
     color: #ffffff;
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 14px 20px -3px rgba(47, 133, 90, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Bloco da Imagem do Banner */
+/* Bloco da Imagem com Arco e Detalhe de Moldura */
 .banner-imagem {
     flex: 1;
     min-width: 300px;
@@ -202,16 +207,22 @@ nav a:hover {
 }
 
 .banner-imagem img {
-    border-radius: 20px;
+    border-radius: 240px 240px 0 0; /* Formato de Arco Arredondado no topo e reto na base */
     object-fit: cover;
     max-width: 100%;
-    height: auto;
-    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+    width: 420px;
+    height: 500px;
+    box-shadow: 18px 18px 0px 0px #2b6cb0; /* Sombra azul abaixo da imagem */
+    filter: none;
     transition: transform 0.3s ease;
 }
 
 .banner-imagem img:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
+}
+
+#categoria {
+    align-items: center;
 }
 
 main {
