@@ -74,18 +74,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap; /* Impede que os itens quebrem linha no desktop */
-    padding: 3em 5em; /* Reduz o padding vertical para o cabeçalho ficar fino */
-    height: 70px; /* Define uma altura fixa confortável */
+    flex-wrap: nowrap; /* Impede que os itens quebrem linha no pc */
+    padding: 3em 5em; 
+    height: 70px; 
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(8px);
-    border-bottom: 2px solid #edf2f7;
+    border-bottom: 2px solid #f7fafc;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-/* Limita a altura da logo para não estourar o cabeçalho */
+
 header img,
 .logo img {
     max-height: 70px; /* Controla a altura da imagem da logo */
@@ -102,23 +102,23 @@ nav a {
     font-weight: 700;
     padding: 0.6em 1em;
     border-radius: 8px;
-    transition: background-color 0.2s, color 0.2s, transform 0.2s; /* Suaviza a transição de cores do fundo e do texto ao passar o cursor */
+    transition: background-color 0.2s, color 0.2s, transform 0.2s; /* Suaviza a transição de cores do fundo e do texto ao passar o mouse */
 }
 
 nav a:hover {
-    background-color: #ebf8ff;
+    background-color: #f7fafc;
     color: #2b6cb0;
     transform: translateY(-1px);
 }
 
-/* Container Principal do Banner (Hero Section Clean/Luxo) */
+/* Container Principal do Banner  */
 #inicio {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 4em;
     padding: 4em 2em;
-    background-color: #f9f8f6; /* Fundo off-white claro e elegante */
+    background-color: #f9f8f6; 
     border: none;
     border-radius: 0;
     margin-top: 1em;
@@ -137,8 +137,8 @@ nav a:hover {
 }
 
 .banner-conteudo h2 {
-    color: #2b6cb0; /* Grafite escuro levemente esverdeado */
-    font-family: 'Playfair Display', Georgia, serif; /* Fonte serifada para o estilo luxo */
+    color: #2b6cb0; 
+    font-family: 'Playfair Display', Georgia, serif; 
     font-weight: 700;
     font-size: 3.2em;
     line-height: 1.1;
@@ -146,7 +146,7 @@ nav a:hover {
 }
 
 .banner-conteudo p {
-    color: #718096;
+    color: #2d3748;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 1.05em;
@@ -211,7 +211,7 @@ nav a:hover {
     transform: scale(1.01);
 }
 
-/* Seção de Categorias/Especialidades Centralizada */
+/* Seção de Categorias */
 #categoria {
     text-align: center;
     padding: 3em 1em 2em 1em;
@@ -226,7 +226,7 @@ nav a:hover {
 }
 
 #categoria p {
-    color: #718096;
+    color: #2d3748;
     font-size: 1.05em;
     margin-bottom: 2em;
 }
@@ -255,12 +255,12 @@ nav.categoria {
 /* Efeito ao passar o cursor pelos botões */
 .btn-categoria:hover {
     color: #2b6cb0;
-    background-color: #ebf8ff;
+    background-color: #f7fafc;
     transform: translateY(-2px);
 }
 
 main {
-    max-width: 1200px; /* Limita a largura máxima do conteúdo em ecrãs grandes */
+    max-width: 1200px; /* Limita a largura máxima do conteúdo telas grandes */
     margin: 0 auto; /* Centraliza o container horizontalmente na página */
     padding: 0 1.5em;
     flex: 1;
