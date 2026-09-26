@@ -241,7 +241,7 @@ nav a:hover {
     margin-bottom: 2em;
 }
 
-/* Container de Links/Botões de Categoria */
+/* Links/Botões de Categoria */
 nav.categoria {
     display: flex;
     justify-content: center; /* Centraliza os botões horizontalmente */
