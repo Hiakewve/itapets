@@ -57,16 +57,6 @@ a {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Estado de interatividade quando o utilizador passa o cursor sobre o link */
-a:hover {
-    color: #2f855a;
-}
-
-a:hover h3 {
-    font-size: 1.20em;
-    color: #2f855a;
-}
-
 /* ==========================================================================
    2. ESTILOS UTILITÁRIOS (Classes Reutilizáveis)
    ========================================================================== */
@@ -191,7 +181,7 @@ nav a:hover {
 
 .banner-botoes a:hover,
 .btn-banner:hover {
-    background-color: #000000;
+    background-color: #2d3748;
     color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -276,52 +266,97 @@ main {
     flex: 1;
 }
 
-#produtos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Cria colunas responsivas automáticas */
-    gap: 2em;
-    padding: 2em 0;
+/* Container de cada Categoria */
+section[id="cachorro"],
+section[id="gato"],
+section[id="passaro"],
+section[id="roedor"] {
+    max-width: 1200px;
+    margin: 0 auto 3.5em auto;
+    padding: 0 1em;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5em;
 }
 
+.titulo-categoria {
+    grid-column: 1 / -1; /* Ocupa toda a largura da grade */
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #2b6cb0; 
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid #2b6cb0; /* Linha de destaque */
+    margin-bottom: 0.5em;
+}
+
+/* Cartão Individual do Produto */
 .card-produto {
     background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 20px;
-    padding: 1.5em;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Aplica uma sombra suave sob o cartão */
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Define transição suave para os efeitos */
-    overflow: hidden;
+    border: 1px solid #edf2f7;
+    border-radius: 16px;
+    padding: 1.5em 1.25em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
+/* Efeito ao passar o mouse sobre o cartão */
 .card-produto:hover {
-    transform: translateY(-6px); /* Eleva o cartão para cima (6px) */
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Intensifica a sombra */
-    border-color: #cbd5e0;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    border-color: #edf2f7;
 }
 
+/* Link Flexbox ocupando 100% da altura interna */
 .card-produto a {
     display: flex;
-    flex-direction: column; /* Orientação vertical dos elementos internos */
-    height: 100%; /* Faz o link ocupar 100% da altura total do cartão */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
     gap: 0.8em;
+    text-decoration: none;
+}
+
+/* Imagem Centralizada dentro do Cartão */
+.card-produto picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px; /* Altura fixa proporcional para padronizar as imagens */
 }
 
 .card-produto img {
-    border-radius: 12px;
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
 .card-produto:hover img {
-    transform: scale(1.04); /* Leve zoom na imagem ao passar o mouse */
+    transform: scale(1.05); /* Leve aproximação da imagem */
 }
 
-/* Seleciona o último parágrafo dentro do cartão de produto (o preço) */
+/* Título h3 do Produto */
+.card-produto h3 {
+    font-size: 1em;
+    font-weight: 700;
+    color: #2d3748;
+    line-height: 1.4;
+}
+
+/* Descrição do Produto */
+.card-produto p:not(:last-child) {
+    font-size: 0.88em;
+    color: #2d3748;
+    line-height: 1.5;
+}
+
 .card-produto p:last-child {
-    margin-top: auto; /* Empurra o preço automaticamente para a base do cartão */
-    font-size: 1.50em;
-    color: #2b6cb0;
+    margin-top: auto; /* Empurra o preço para a base do cartão */
+    font-size: 1.35em;
     font-weight: 800;
-    letter-spacing: -0.5px;
+    color: #2b6cb0; /* azul para os preços */
 }
 
 fieldset {
