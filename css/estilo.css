@@ -2,10 +2,8 @@
    1. ESTILOS GERAIS E BASE (HTML Tags, Reset, Tipografia e Body)
    ========================================================================== */
 
-/* Importação do Google Fonts (Obrigatório na primeira linha) */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
 
-/* Seletor universal: seleciona absolutamente todos os elementos da página */
 * {
     margin: 0; /* Remove as margens externas padrão aplicadas pelos navegadores */
     padding: 0; /* Remove o espaçamento interno padrão aplicado pelos navegadores */
