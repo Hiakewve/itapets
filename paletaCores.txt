@@ -1,7 +1,7 @@
 1. Petz Blue (Azul Confiança): #2b6cb0 Cor Primária: Identidade da marca. Utilizada na cor dos títulos (h1, h2, h3), 
 links no estado normal (a), bordas de destaque e nos botões de ação principal.
 
-2. Vitality Green (Verde Saúde): #2f855a Cor Secundária e Interatividade: Remete a cuidado e bem-estar. Utilizada 
+2. Vitality Green (Verde Saúde): #1e3627 Cor Secundária e Interatividade: Remete a cuidado e bem-estar. Utilizada 
 exclusivamente para o estado interativo de passar o mouse (:hover) em links e botões, além de badges/preços especiais.
 
 3. Grafite / Chumbo: #2d3748 Texto Principal: Substitui o preto absoluto (#000000). Utilizada no corpo do texto 

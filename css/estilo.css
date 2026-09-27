@@ -111,104 +111,72 @@ nav a:hover {
     transform: translateY(-1px);
 }
 
-/* Container Principal do Banner  */
+/* Container do Banner com Imagem */
 #inicio {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 4em;
-    padding: 4em 2em;
-    background-color: #f9f8f6; 
-    border: none;
-    border-radius: 0;
-    margin-top: 1em;
+    width: 100%;
+    min-height: 530px; /* Altura confortável para exibir toda a cena da imagem */
+    padding: 3em 4em;
     margin-bottom: 3em;
-    flex-wrap: wrap;
-    box-shadow: none; /* Remove sombras do container principal */
+    border-radius: 24px;
+    
+    /* Aplicação da Imagem de Fundo */
+    background-image: url('../img/cachorro-e-gato-juntos.webp'); /* Caminho para a imagem */
+    background-size: cover;       /* Faz a imagem cobrir todo o bloco */
+    background-position: center;  /* Centraliza a foto */
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
-/* Bloco do Conteúdo de Texto */
 .banner-conteudo {
-    flex: 1;
-    min-width: 320px;
+    max-width: 430px; /* Limita a largura do texto para não cobrir os animais */
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25em;
 }
 
 .banner-conteudo h2 {
-    color: #2b6cb0; 
-    font-family: 'Playfair Display', Georgia, serif; 
-    font-weight: 700;
-    font-size: 3.2em;
-    line-height: 1.1;
+    color: #1a202c; /* Grafite bem escuro/preto para alto contraste sobre o bege */
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 800;
+    font-size: 2.85em;
+    line-height: 1.15;
     letter-spacing: -0.5px;
 }
 
 .banner-conteudo p {
     color: #2d3748;
     font-family: 'Nunito', sans-serif;
-    font-weight: 400;
     font-size: 1.05em;
     line-height: 1.6;
-    max-width: 480px;
 }
 
-/* Container do Botão de Ação */
+/* Botão de Ação */
 .banner-botoes {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    margin-top: 10px;
+    margin-top: 0.5em;
 }
 
-/* Estilo do Botão Escuro Minimalista */
 .banner-botoes a,
 .btn-banner {
     display: inline-block;
-    background-color: #2b6cb0; /* botão azul */
+    background-color: #2b6cb0; 
     color: #ffffff;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
-    font-size: 0.85em;
-    text-transform: uppercase; /* Texto em caixa alta */
-    letter-spacing: 1.5px; /* Espaçamento refinado entre letras */
-    padding: 1.1em 2.5em;
+    font-size: 0.95em;
+    padding: 1em 2.2em;
     border-radius: 50px;
-    box-shadow: none;
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(43, 76, 56, 0.2);
+    transition: all 0.25s ease;
 }
 
 .banner-botoes a:hover,
 .btn-banner:hover {
-    background-color: #2d3748;
+    background-color: #1e3627;
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-/* Bloco da Imagem com Arco e Detalhe de Moldura */
-.banner-imagem {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner-imagem img {
-    border-radius: 240px 240px 0 0; /* Formato de Arco Arredondado no topo e reto na base */
-    object-fit: cover;
-    max-width: 100%;
-    width: 420px;
-    height: 500px;
-    box-shadow: 18px 18px 0px 0px #2b6cb0; /* Sombra azul abaixo da imagem */
-    filter: none;
-    transition: transform 0.3s ease;
-}
-
-.banner-imagem img:hover {
-    transform: scale(1.01);
+    box-shadow: 0 6px 16px rgba(43, 76, 56, 0.3);
 }
 
 /* Seção de Categorias */
@@ -263,6 +231,8 @@ nav.categoria {
     width: 48px;
     height: 48px;
     object-fit: contain;
+    filter: invert(34%) sepia(85%) saturate(746%) hue-rotate(174deg) brightness(91%) contrast(91%);
+    transition: filter 0.25s ease;
 }
 
 /* Texto do Botão */
@@ -608,8 +578,13 @@ footer p:last-child {
 
     #inicio {
         padding: 2.5em 1.5em;
+        min-height: auto;
+        background-position: right center; /* Ajusta o foco para os pets em ecra pequeno */
+    }
+
+    .banner-conteudo {
+        max-width: 100%;
         text-align: center;
-        border-radius: 20px;
     }
 
     .banner-conteudo h2 {
@@ -617,6 +592,7 @@ footer p:last-child {
     }
 
     .banner-botoes {
+        display: flex;
         justify-content: center;
     }
 
