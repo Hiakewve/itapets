@@ -234,29 +234,49 @@ nav a:hover {
 /* Links/Botões de Categoria */
 nav.categoria {
     display: flex;
-    justify-content: center; /* Centraliza os botões horizontalmente */
+    justify-content: center;
     align-items: center;
-    gap: 1.5em; /* Espaçamento uniforme entre as opções */
-    flex-wrap: wrap; /* Garante que os botões quebrem linha no celular */
+    gap: 1.5em;
+    flex-wrap: wrap;
 }
 
-/* Estilização dos Links de Categoria */
+/* Transformação dos Links em Cartões Grandes (Botões) */
 .btn-categoria {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;  /* Largura fixa do cartão */
+    height: 150px; /* Altura fixa do cartão */
+    background-color: #ffffff;
     color: #2d3748;
+    border-radius: 16px;
+    padding: 1.5em;
+    gap: 1em; /* Espaço entre o ícone e o texto */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04); /* Sombra suave idêntica à imagem */
+    border: 1px solid #edf2f7;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+/* Tamanho do Ícone dentro do Botão */
+.btn-categoria img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+/* Texto do Botão */
+.btn-categoria span {
     font-weight: 700;
     font-size: 1em;
-    padding: 0.6em 1.2em;
-    border-radius: 8px;
-    background-color: transparent;
-    transition: all 0.25s ease;
+    color: #1a202c;
 }
 
 /* Efeito ao passar o cursor pelos botões */
 .btn-categoria:hover {
-    color: #2b6cb0;
-    background-color: #f7fafc;
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    border-color: #cbd5e0;
 }
 
 main {
