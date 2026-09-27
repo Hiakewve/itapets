@@ -32,6 +32,7 @@ h2 {
     color: #2b6cb0;
     font-weight: 800;
     letter-spacing: -0.5px;
+    font-family: 'Playfair Display', Georgia, serif;
 }
 
 h3 {
@@ -221,7 +222,7 @@ nav.categoria {
     border-radius: 16px;
     padding: 1.5em;
     gap: 1em; /* Espaço entre o ícone e o texto */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04); /* Sombra suave idêntica à imagem */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04); /* Sombra suave */
     border: 1px solid #edf2f7;
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
