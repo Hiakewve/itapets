@@ -232,7 +232,7 @@ nav.categoria {
     width: 48px;
     height: 48px;
     object-fit: contain;
-    filter: invert(34%) sepia(85%) saturate(746%) hue-rotate(174deg) brightness(91%) contrast(91%);
+    filter: invert(45%) sepia(20%) saturate(1020%) hue-rotate(342deg) brightness(92%) contrast(87%);
     transition: filter 0.25s ease;
 }
 
