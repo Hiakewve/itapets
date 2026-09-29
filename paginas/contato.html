@@ -6,84 +6,132 @@
         <title>ItaPets - Contato</title>
         <link rel="icon" type="image/png" href="../img/favicon.png">
 
-        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+        
+        <style>
+            @layer bootstrap, custom;
+            @import url("../css/bootstrap.min.css") layer(bootstrap);
+        </style>
+
+        <link rel="stylesheet" href="../css/estilo_contato.css">
     </head>
 
     <body>
         <header>
-            <h1>
-                <a href="../index.html">
-                    <picture>
-                        <img src="../img/logo-itapets.webp" alt="ItaPets - Seu Mundo Pet" width="150">
-                    </picture>
-                </a>
-            </h1>
-            
-            <nav>
-                <a href="../index.html">Início</a> |
-                <a href="../index.html#produtos">Produtos</a>
+            <nav class="nav-header">
+                <h1>
+                    <a href="../index.html">
+                        <picture>
+                            <img src="../img/logo-itapets.webp" alt="ItaPets - Seu Mundo Pet" width="120">
+                        </picture>
+                    </a>
+                </h1>
+                
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../index.html#produtos">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
             </nav>
         </header>
 
-        <main>
-            <section id="contato">
-                <h2>Fale Conosco</h2>
+        <main class="container my-5">
+            <section id="contato" class="col-12 col-md-10 col-lg-8 mx-auto">
+                <h2 class="mb-4 text-center">Fale Conosco</h2>
                 
                 <form action="mailto:seuemail@exemplo.com?subject=Comentário%20sobre%20o%20site%20ItaPets" method="post" enctype="text/plain">
 
-                    <fieldset>
+                    <!-- Dados Pessoais -->
+                    <fieldset class="mb-4">
                         <legend>Dados Pessoais</legend>
-                        
-                        <label for="nome">Nome Completo:</label>
-                        <input type="text" id="nome" name="Nome" required placeholder="Digite seu nome">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="nome" class="form-label">Nome Completo:</label>
+                                <input type="text" id="nome" name="Nome" class="form-control" required placeholder="Digite seu nome">
+                            </div>
 
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="E-mail" required placeholder="seuemail@exemplo.com">
+                            <div class="col-12 col-md-6">
+                                <label for="email" class="form-label">E-mail:</label>
+                                <input type="email" id="email" name="E-mail" class="form-control" required placeholder="seuemail@exemplo.com">
+                            </div>
 
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="Telefone" required placeholder="(79) 99999-9999">
+                            <div class="col-12 col-md-6">
+                                <label for="telefone" class="form-label">Telefone:</label>
+                                <input type="tel" id="telefone" name="Telefone" class="form-control" required placeholder="(79) 99999-9999">
+                            </div>
+                        </div>
                     </fieldset>
 
-                    <fieldset>
+                    <!-- Qual pet você possui? -->
+                    <fieldset class="mb-4">
                         <legend>Qual pet você possui?</legend>
-                        
-                        <input type="radio" id="pet-cao" name="TipoDePet" value="Cão">
-                        <label for="pet-cao">Cão</label>
+                        <div class="d-flex flex-wrap gap-4 pt-2">
+                            <div class="form-check">
+                                <input type="radio" id="pet-cao" name="TipoDePet" value="Cão" class="form-check-input">
+                                <label for="pet-cao" class="form-check-label">Cão</label>
+                            </div>
 
-                        <input type="radio" id="pet-gato" name="TipoDePet" value="Gato">
-                        <label for="pet-gato">Gato</label>
+                            <div class="form-check">
+                                <input type="radio" id="pet-gato" name="TipoDePet" value="Gato" class="form-check-input">
+                                <label for="pet-gato" class="form-check-label">Gato</label>
+                            </div>
 
-                        <input type="radio" id="pet-outros" name="TipoDePet" value="Outros">
-                        <label for="pet-outros">Outros</label>
+                            <div class="form-check">
+                                <input type="radio" id="pet-outros" name="TipoDePet" value="Outros" class="form-check-input">
+                                <label for="pet-outros" class="form-check-label">Outros</label>
+                            </div>
+                        </div>
                     </fieldset>
 
-                    <fieldset>
+                    <!-- Sua Mensagem -->
+                    <fieldset class="mb-4">
                         <legend>Sua Mensagem</legend>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="assunto" class="form-label">Assunto da Mensagem:</label>
+                                <select id="assunto" name="Assunto" class="form-select">
+                                    <option value="Dúvida">Dúvida sobre produto</option>
+                                    <option value="Sugestão">Sugestão</option>
+                                    <option value="Elogio">Elogio</option>
+                                    <option value="Reclamação">Reclamação</option>
+                                </select>
+                            </div>
 
-                        <label for="assunto">Assunto da Mensagem:</label>
-                        <select id="assunto" name="Assunto">
-                            <option value="Dúvida">Dúvida sobre produto</option>
-                            <option value="Sugestão">Sugestão</option>
-                            <option value="Elogio">Elogio</option>
-                            <option value="Reclamação">Reclamação</option>
-                        </select>
-
-                        <label for="comentario">Comentário:</label>
-                        <textarea id="comentario" name="Comentario" rows="5" cols="40" required placeholder="Escreva aqui seu comentário..."></textarea>
+                            <div class="col-12">
+                                <label for="comentario" class="form-label">Comentário:</label>
+                                <textarea id="comentario" name="Comentario" rows="5" class="form-control" required placeholder="Escreva aqui seu comentário..."></textarea>
+                            </div>
+                        </div>
                     </fieldset>
 
-                    <fieldset>
+                    <!-- Termos e Preferências -->
+                    <fieldset class="mb-4">
                         <legend>Termos e Preferências</legend>
+                        <div class="d-flex flex-column gap-2 pt-2">
+                            <div class="form-check">
+                                <input type="checkbox" id="newsletter" name="Newsletter" value="Sim" class="form-check-input" checked>
+                                <label for="newsletter" class="form-check-label">Desejo receber promoções por e-mail</label>
+                            </div>
 
-                        <input type="checkbox" id="newsletter" name="Newsletter" value="Sim" checked>
-                        <label for="newsletter">Desejo receber promoções por e-mail</label>
-
-                        <input type="checkbox" id="termos" name="Termos" value="Aceito" required>
-                        <label for="termos">Concordo com os termos de uso e privacidade</label>
+                            <div class="form-check">
+                                <input type="checkbox" id="termos" name="Termos" value="Aceito" class="form-check-input" required>
+                                <label for="termos" class="form-check-label">Concordo com os termos de uso e privacidade</label>
+                            </div>
+                        </div>
                     </fieldset>
 
-                    <button type="submit">Enviar Comentário</button>
-                    <button type="reset">Limpar Campos</button>
+                    <!-- Botões -->
+                    <div class="row g-3 mt-2">
+                        <div class="col-12 col-md-6">
+                            <button type="submit" id="botao-enviar" class="btn w-100">Enviar Comentário</button>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <button type="reset" id="botao-limpar" class="btn w-100">Limpar Campos</button>
+                        </div>
+                    </div>
 
                 </form>
             </section>
@@ -91,9 +139,9 @@
 
         <footer>
             <h1>
-                <a href="index.html">
+                <a href="../index.html">
                     <picture>
-                        <img src="../img/logo-itapets.webp" alt="ItaPets - Seu Mundo Pet" width="150">
+                        <img src="../img/logo-itapets.webp" alt="ItaPets - Seu Mundo Pet" width="130">
                     </picture>
                 </a>
             </h1>
@@ -104,9 +152,9 @@
             </p>
 
             <nav>
-                <a href="#">Início</a> | 
-                <a href="#produtos">Produtos</a> |
-                <a href="paginas/contato.html">Contato</a>
+                <a href="../index.html">Início</a> | 
+                <a href="../index.html#produtos">Produtos</a> |
+                <a href="contato.html">Contato</a>
             </nav>
 
             <p>&copy; 2026 ItaPets - Todos os Direitos Reservados.</p>
