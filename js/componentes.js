@@ -1,11 +1,3 @@
-/* ==========================================================================
-   ITAPETS - SCRIPTS JS PRINCIPAIS
-   Componentes Utilizados:
-   1. AOS (Animate On Scroll) - Efeito dos elementos surgindo ao rolar
-   2. Swiper.js - Carrossel de produtos em destaque
-   3. SweetAlert2 - Alerta estilizado no envio do formulário de contato
-   ========================================================================== */
-
 document.addEventListener('DOMContentLoaded', () => {
 
     /* ----------------------------------------------------------------------
@@ -13,9 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
        ---------------------------------------------------------------------- */
     if (typeof AOS !== 'undefined') {
         AOS.init({
-            duration: 800,   // Duração da animação em milissegundos
-            once: true,      // Executa a animação apenas uma vez ao rolar
-            offset: 80       // Distância em px do elemento até a viewport para disparar
+            duration: 800,   
+            once: true,      
+            offset: 80       
         });
     }
 
