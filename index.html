@@ -6,7 +6,12 @@
         <title>ItaPets - Seu Mundo Pet</title>
         <link rel="icon" type="image/png" href="img/favicon.png">
 
-          <link rel="stylesheet" href="css/estilo.css"> 
+        <!-- Estilos das Bibliotecas JavaScript -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+        <!-- Estilo Customizado do Projeto -->
+        <link rel="stylesheet" href="css/estilo.css"> 
     </head>
 
     <body>
@@ -27,7 +32,7 @@
         </header>
 
         <main>
-            <section id="inicio">
+            <section id="inicio" data-aos="fade-up">
                 <article class="banner-conteudo">
                     <h2>O melhor para quem faz parte da família</h2>
                     <p>
@@ -35,12 +40,123 @@
                         de ponta para garantir a felicidade e o bem-estar do seu pet.
                     </p>
                     <nav class="banner-botoes">
-                        <a href="#categoria" class="btn-banner">Explorar Produtos</a>
+                        <a href="#destaques" class="btn-banner">Explorar Produtos</a>
                     </nav>
                 </article>
             </section>
 
-            <section id="categoria">
+            <!-- Carrossel de Produtos em Destaque -->
+            <section id="destaques" class="container my-5" data-aos="fade-up">
+                <h2 class="titulo-categoria text-center mb-4">Destaques da Semana</h2>
+                
+                <div class="swiper swiper-produtos">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            <article class="card-produto">
+                                <a href="paginas/tapete-higienico-petz-para-caes.html">
+                                    <picture>
+                                        <img src="img/tapete-higienico-petz-para-caes.webp" alt="Tapete Higiênico Petz">
+                                    </picture>
+                                    <h3>Tapete Higiênico Petz para Cães</h3>
+                                    <p>R$ 89,99</p>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="card-produto">
+                                <a href="paginas/bebedouro-fonte-de-porcelana-cansei-de-ser-gato.html">
+                                    <picture>
+                                        <img src="img/bebedouro-fonte-de-porcelana-cansei-de-ser-gato.webp" alt="Bebedouro Fonte Porcelana">
+                                    </picture>
+                                    <h3>Bebedouro Fonte Porcelana Cansei de Ser Gato</h3>
+                                    <p>R$ 296,99</p>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="card-produto">
+                                <a href="paginas/racao-golden-special-para-caes-adultos-sabor-frango-e-carne.html">
+                                    <picture>
+                                        <img src="img/racao-golden-special-para-caes-adultos-sabor-frango-e-carne.webp" alt="Ração Golden Special">
+                                    </picture>
+                                    <h3>Ração Golden Special Cães Adultos 15kg</h3>
+                                    <p>R$ 184,99</p>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="card-produto">
+                                <a href="paginas/cama-spike-colchonete-confort-verde-para-caes-e-gatos.html">
+                                    <picture>
+                                        <img src="img/cama-spike-colchonete-confort-verde-para-caes-e-gatos.webp" alt="Cama Spike Colchonete Verde">
+                                    </picture>
+                                    <h3>Cama Spike Colchonete Confort Verde</h3>
+                                    <p>R$ 119,99</p>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="card-produto">
+                                <a href="paginas/brinquedo-spike-camarao-de-pelucia-para-caes.html">
+                                    <picture>
+                                        <img src="img/brinquedo-spike-camarao-de-pelucia-para-caes.webp" alt="Brinquedo Camarão de Pelúcia">
+                                    </picture>
+                                    <h3>Brinquedo Spike Camarão de Pelúcia</h3>
+                                    <p>R$ 49,99</p>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="card-produto">
+                                <a href="paginas/areia-higienica-viva-verde-graos-finos-para-gatos.html">
+                                    <picture>
+                                        <img src="img/areia-higienica-viva-verde-graos-finos-para-gatos.webp" alt="Areia Higiênica Viva Verde">
+                                    </picture>
+                                    <h3>Areia Higiênica Viva Verde Grãos Finos</h3>
+                                    <p>R$ 59,49</p>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="card-produto">
+                                <a href="paginas/racao-golden-para-gatos-adultos-castrados-sabor-salmao.html">
+                                    <picture>
+                                        <img src="img/racao-golden-para-gatos-adultos-castrados-sabor-salmao.webp" alt="Ração Golden Gatos Castrados">
+                                    </picture>
+                                    <h3>Ração Golden Gatos Castrados Salmão</h3>
+                                    <p>R$ 142,99</p>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="card-produto">
+                                <a href="paginas/fantasia-de-coelho-branco-cansei-de-ser-gato.html">
+                                    <picture>
+                                        <img src="img/fantasia-de-coelho-branco-cansei-de-ser-gato.webp" alt="Fantasia de Coelho Branco">
+                                    </picture>
+                                    <h3>Fantasia de Coelho Branco para Pets</h3>
+                                    <p>R$ 45,00</p>
+                                </a>
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+
+            <section id="categoria" data-aos="fade-up">
                 <h2>Nossas Especialidades</h2>
 
                 <p>
@@ -67,310 +183,248 @@
                 </nav>
             </section>
 
+            <!-- Seção Cães com Animação Scroll -->
             <section id="cachorro" aria-labelledby="titulo-cachorro">
-                <h2 id="titulo-cachorro" class="titulo-categoria">Cachorros</h2>
+                <h2 id="titulo-cachorro" class="titulo-categoria" data-aos="fade-up">Cachorros</h2>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="100">
                     <a href="paginas/tapete-higienico-petz-para-caes.html">
                         <picture>
                             <img src="img/tapete-higienico-petz-para-caes.webp" alt="Imagem de Tapete Higiênico Petz para Cães" width="300">
                         </picture>
                         <h3>Tapete Higiênico Petz para Cães</h3>
-                        
-                        <p>
-                            R$ 89,99
-                        </p>
+                        <p>R$ 89,99</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="150">
                     <a href="paginas/brinquedo-spike-camarao-de-pelucia-para-caes.html">
                         <picture>
                             <img src="img/brinquedo-spike-camarao-de-pelucia-para-caes.webp" alt="Imagem de Brinquedo Spike Camarão de Pelúcia para Cães" width="300">
                         </picture>
                         <h3>Brinquedo Spike Camarão de Pelúcia para Cães</h3>
-                        
-                        <p>
-                            R$ 49,99
-                        </p>
+                        <p>R$ 49,99</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="200">
                     <a href="paginas/antipulgas-simparic-trio-6-mg-para-caes.html">
                         <picture>
                             <img src="img/antipulgas-simparic-trio-6-mg-para-caes.webp" alt="Imagem de Antipulgas Simparic Trio 6 Mg para Cães" width="300">
                         </picture>
                         <h3>Antipulgas Simparic Trio 6 Mg para Cães</h3>
-                        
-                        <p>
-                            R$ 93,49
-                        </p>
+                        <p>R$ 93,49</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="250">
                     <a href="paginas/coleira-toh-com-tag-id-fiji-para-caes.html">
                         <picture>
                             <img src="img/coleira-toh-com-tag-id-fiji-para-caes.webp" alt="Imagem de Coleira TOH com Tag ID Fiji para Cães" width="300">
                         </picture>
                         <h3>Coleira TOH com Tag ID Fiji para Cães</h3>
-                        
-                        <p>
-                            R$ 34,99
-                        </p>
+                        <p>R$ 34,99</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="300">
                     <a href="paginas/tapete-higienico-super-secao-max-citrus-slim-para-caes.html">
                         <picture>
                             <img src="img/tapete-higienico-super-secao-max-citrus-slim-para-caes.webp" alt="Imagem de Tapete Higiênico Super Secão Max Citrus Slim para Cães" width="300">
                         </picture>
                         <h3>Tapete Higiênico Super Secão Max Citrus Slim para Cães</h3>
-                        
-                        <p>
-                            R$ 86,99
-                        </p>
+                        <p>R$ 86,99</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="350">
                     <a href="paginas/peitoral-petz-waterproof-tech-blue-para-caes.html">
                         <picture>
                             <img src="img/peitoral-petz-waterproof-tech-blue-para-caes.webp" alt="Imagem de Peitoral Petz Waterproof Tech Blue para Cães" width="300">
                         </picture>
                         <h3>Peitoral Petz Waterproof Tech Blue para Cães</h3>
-                        
-                        <p>
-                            R$ 28,99
-                        </p>
+                        <p>R$ 28,99</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="400">
                     <a href="paginas/osso-dingo-para-caes-original-mini-100g.html">
                         <picture>
                             <img src="img/osso-dingo-para-caes-original-mini-100g.webp" alt="Imagem de Osso Dingo para Cães Original Mini 100g" width="300">
                         </picture>
                         <h3>Osso Dingo para Cães Original Mini 100g</h3>
-                        
-                        <p>
-                            R$ 29,99
-                        </p>
+                        <p>R$ 29,99</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="450">
                     <a href="paginas/fantasia-de-coelho-branco-cansei-de-ser-gato.html">
                         <picture>
                             <img src="img/fantasia-de-coelho-branco-cansei-de-ser-gato.webp" alt="Imagem de Fantasia de Coelho Branco Cansei de Ser Gato" width="300">
                         </picture>
                         <h3>Fantasia de Coelho Branco Cansei de Ser Gato</h3>
-                        
-                        <p>
-                            R$ 45,00
-                        </p>
+                        <p>R$ 45,00</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="500">
                     <a href="paginas/brinquedo-spike-bola-de-corda-de-puxar-laranja-para-caes.html">
                         <picture>
                             <img src="img/brinquedo-spike-bola-de-corda-de-puxar-laranja-para-caes.webp" alt="Imagem de Brinquedo Spike Bola de Corda de Puxar Laranja para Cães" width="300">
                         </picture>
                         <h3>Brinquedo Spike Bola de Corda de Puxar Laranja para Cães</h3>
-                        
-                        <p>
-                            R$ 21,99
-                        </p>
+                        <p>R$ 21,99</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="550">
                     <a href="paginas/cama-spike-colchonete-confort-verde-para-caes-e-gatos.html">
                         <picture>
                             <img src="img/cama-spike-colchonete-confort-verde-para-caes-e-gatos.webp" alt="Imagem de Cama Spike Colchonete Confort Verde para Cães e Gatos" width="300">
                         </picture>
                         <h3>Cama Spike Colchonete Confort Verde para Cães e Gatos</h3>
-                        
-                        <p>
-                            R$ 119,99
-                        </p>
+                        <p>R$ 119,99</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="600">
                     <a href="paginas/shampoo-fresh-care-filhote-para-caes-500ml.html">
                         <picture>
                             <img src="img/shampoo-fresh-care-filhote-para-caes-500ml.webp" alt="Imagem de Shampoo Fresh Care Filhote para Cães 500ml" width="300">
                         </picture>
                         <h3>Shampoo Fresh Care Filhote para Cães 500ml</h3>
-                        
-                        <p>
-                            R$ 21,99
-                        </p>
+                        <p>R$ 21,99</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="650">
                     <a href="paginas/biscoito-premier-cookie-para-caes-adultos-de-racas-pequenas-250g.html">
                         <picture>
                             <img src="img/biscoito-premier-cookie-para-caes-adultos-de-racas-pequenas-250g.webp" alt="Imagem de Biscoito Premier Cookie para Cães Adultos de Raças Pequenas 250g" width="300">
                         </picture>
                         <h3>Biscoito Premier Cookie para Cães Adultos de Raças Pequenas 250g</h3>
-                        
-                        <p>
-                            R$ 18,90
-                        </p>
+                        <p>R$ 18,90</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="700">
                     <a href="paginas/racao-golden-special-para-caes-adultos-sabor-frango-e-carne.html">
                         <picture>
                             <img src="img/racao-golden-special-para-caes-adultos-sabor-frango-e-carne.webp" alt="Imagem de Ração Golden Special para Cães Adultos Sabor Frango e Carne" width="300">
                         </picture>
                         <h3>Ração Golden Special para Cães Adultos Sabor Frango e Carne</h3>
-                        
-                        <p>
-                            R$ 184,99
-                        </p>
+                        <p>R$ 184,99</p>
                     </a>
                 </article>
 
             </section>
 
+            <!-- Seção Gatos com Animação Scroll -->
             <section id="gato" aria-labelledby="titulo-gato">
-                <h2 id="titulo-gato" class="titulo-categoria">Gatos</h2>
+                <h2 id="titulo-gato" class="titulo-categoria" data-aos="fade-up">Gatos</h2>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="100">
                     <a href="paginas/bebedouro-fonte-de-porcelana-cansei-de-ser-gato.html">
                         <picture>
                             <img src="img/bebedouro-fonte-de-porcelana-cansei-de-ser-gato.webp" alt="Imagem de Bebedouro Fonte de Porcelana Cansei de Ser Gato" width="300">
                         </picture>
                         <h3>Bebedouro Fonte de Porcelana Cansei de Ser Gato</h3>
-                        
-                        <p>
-                            R$ 296,99
-                        </p>
+                        <p>R$ 296,99</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="150">
                     <a href="paginas/areia-higienica-viva-verde-graos-finos-para-gatos.html">
                         <picture>
                             <img src="img/areia-higienica-viva-verde-graos-finos-para-gatos.webp" alt="Imagem de Areia Higiênica Viva Verde Grãos Finos para Gatos" width="300">
                         </picture>
                         <h3>Areia Higiênica Viva Verde Grãos Finos para Gatos</h3>
-                        
-                        <p>
-                            R$ 59,49
-                        </p>
+                        <p>R$ 59,49</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="200">
                     <a href="paginas/brinquedo-pet-games-refil-da-varinha-flying-para-gatos.html">
                         <picture>
                             <img src="img/brinquedo-pet-games-refil-da-varinha-flying-para-gatos.webp" alt="Imagem de Brinquedo Pet Games Refil da Varinha Flying para Gatos" width="300">
                         </picture>
                         <h3>Brinquedo Pet Games Refil da Varinha Flying para Gatos</h3>
-                        
-                        <p>
-                            R$ 25,89
-                        </p>
+                        <p>R$ 25,89</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="250">
                     <a href="paginas/fantasia-de-coelho-branco-cansei-de-ser-gato.html">
                         <picture>
                             <img src="img/fantasia-de-coelho-branco-cansei-de-ser-gato.webp" alt="Imagem de Fantasia de Coelho Branco Cansei de Ser Gato" width="300">
                         </picture>
                         <h3>Fantasia de Coelho Branco Cansei de Ser Gato</h3>
-                        
-                        <p>
-                            R$ 45,00
-                        </p>
+                        <p>R$ 45,00</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="300">
                     <a href="paginas/arranhador-chalesco-kitty-para-gatos.html">
                         <picture>
                             <img src="img/arranhador-chalesco-kitty-para-gatos.webp" alt="Imagem de Arranhador Chalesco Kitty para Gatos" width="300">
                         </picture>
                         <h3>Arranhador Chalesco Kitty para Gatos</h3>
-                        
-                        <p>
-                            R$ 66,49
-                        </p>
+                        <p>R$ 66,49</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="350">
                     <a href="paginas/cama-spike-colchonete-confort-verde-para-caes-e-gatos.html">
                         <picture>
                             <img src="img/cama-spike-colchonete-confort-verde-para-caes-e-gatos.webp" alt="Imagem de Cama Spike Colchonete Confort Verde para Cães e Gatos" width="300">
                         </picture>
                         <h3>Cama Spike Colchonete Confort Verde para Cães e Gatos</h3>
-                        
-                        <p>
-                            R$ 119,99
-                        </p>
+                        <p>R$ 119,99</p>
                     </a>
                 </article>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="400">
                     <a href="paginas/racao-golden-para-gatos-adultos-castrados-sabor-salmao.html">
                         <picture>
                             <img src="img/racao-golden-para-gatos-adultos-castrados-sabor-salmao.webp" alt="Imagem de Ração Golden para Gatos Adultos Castrados Sabor Salmão" width="300">
                         </picture>
                         <h3>Ração Golden para Gatos Adultos Castrados Sabor Salmão</h3>
-                        
-                        <p>
-                            R$ 142,99
-                        </p>
+                        <p>R$ 142,99</p>
                     </a>
                 </article>
-                
+
             </section>
 
+            <!-- Seção Pássaros -->
             <section id="passaro" aria-labelledby="titulo-passaro">
-                <h2 id="titulo-passaro" class="titulo-categoria">Pássaros</h2>
+                <h2 id="titulo-passaro" class="titulo-categoria" data-aos="fade-up">Pássaros</h2>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="100">
                     <a href="paginas/racao-sempre-vita-calopsitas-e-agapornis-500g.html">
                         <picture>
                             <img src="img/racao-sempre-vita-calopsitas-e-agapornis-500g.webp" alt="Imagem de Ração para Calopsitas e Agapornis" width="300">
                         </picture>
                         <h3>Ração Sempre Vita Calopsitas e Agapornis - 500g</h3>
-                        
-                        <p>
-                            R$ 10,90
-                        </p>
+                        <p>R$ 10,90</p>
                     </a>
                 </article>
-                
+
             </section>
 
+            <!-- Seção Roedores -->
             <section id="roedor" aria-labelledby="titulo-roedor">
-                <h2 id="titulo-roedor" class="titulo-categoria">Roedores</h2>
+                <h2 id="titulo-roedor" class="titulo-categoria" data-aos="fade-up">Roedores</h2>
 
-                <article class="card-produto">
+                <article class="card-produto" data-aos="fade-up" data-aos-delay="100">
                     <a href="paginas/tubo-comestivel-nutrihome-para-roedores.html">
                         <picture>
                             <img src="img/tubo-comestivel-nutrihome-para-roedores.webp" alt="Imagem de Tubo Comestível Nutrihome para Roedores" width="300">
                         </picture>
                         <h3>Tubo Comestível Nutrihome para Roedores</h3>
-                        
-                        <p>
-                            R$ 31,99
-                        </p>
+                        <p>R$ 31,99</p>
                     </a>
                 </article>
-                
+
             </section>
         </main>
 
@@ -397,5 +451,9 @@
             <p>&copy; 2026 ItaPets - Todos os Direitos Reservados.</p>
         </footer>
         
+        <!-- Scripts das Bibliotecas JavaScript e do arquivo externo -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/componentes.js"></script>
     </body>
 </html>
